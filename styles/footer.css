@@ -66,6 +66,38 @@ footer span {
     position: absolute;
     bottom: 0px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);d
   } */
+}
+.txt_us_btn.mobile{
+display: none;
+}
+.tbc_logo_mobile{
+  display: none;
+  width: 100%;
+  grid-column: 2;
+  padding:20px 0;
+}
+
+@media(max-width:720px){
+  .footer{
+    flex-direction: column;
+  }
+  .tbc_logo_mobile{
+    display: flex;
+  }
+  .tbc_logo{
+    display: none;
+  }
+  .txt_us_btn.desktop{
+    display: none;
+  }
+  .bottom.right{
+    display: none;
+
+  }
+  .txt_us_btn.mobile{
+    display: flex;
+    }
+
 }
