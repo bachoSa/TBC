@@ -30,7 +30,7 @@ footer {
   padding-bottom: 10px;
 }
 
-.bottom .right button {
+.txt_us_btn {
   background-color: var(--text-light-blue);
   border: 1px solid var(--text-light-blue);
   cursor: pointer !important;
@@ -41,7 +41,7 @@ footer {
   padding: 8px 15px;
   font-size: 16px;
 }
-.bottom .right button:hover {
+.txt_us_btn:hover {
   background-color: #d5d5d5;
   border: 1px solid #d5d5d5;
 
@@ -55,7 +55,17 @@ footer span {
 }
 
 @media (max-width: 1024px) {
-  footer a{
+  footer a {
     font-weight: lighter;
   }
+  footer {
+    position: relative;
+    padding-bottom: 100px;
+  }
+  /* .txt_us_btn {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
 }

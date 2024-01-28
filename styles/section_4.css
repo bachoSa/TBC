@@ -97,6 +97,15 @@
 @media (max-width: 1024px) {
   .section_4 {
     padding: 40px 10px;
+    padding-bottom: 100px;
+  }
+  .section_4 a {
+    position: absolute;
+    bottom: 30px;
+    border: 0;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
   }
 
   .section_4_header {
