@@ -1,0 +1,136 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  box-sizing: border-box;
+  grid-template-columns: var(--grid-template-columns);
+  width: 100%;
+  height: 84px;
+  padding: 0;
+  background-color: #1a1e1f;
+  display: grid;
+  justify-content: center;
+  color: var(--text-main);
+}
+
+.nav-inner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  grid-column: 2;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.action_item {
+  font-size: 14px;
+  transition: 0.4s ease-in-out;
+}
+.action_item:hover {
+  color: var(--text-light-blue);
+}
+.action_active {
+  color: var(--text-light-blue);
+}
+
+@media (max-width: 1024px) {
+  nav {
+    height: 69px;
+  }
+  .actions {
+    display: none;
+  }
+  .mobile_buttons_container {
+    display: flex!important;
+  }
+}
+
+/* mobile actions */
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.actions.mobile {
+  transition: 0.3s;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-direction: column;
+  right: -100%;
+  top: 0;
+  background-color: #222222;
+  z-index: 2;
+  padding-left: 130px;
+  height: 100vh;
+  padding-top: 100px;
+  padding-right: 10px;
+}
+.action_item {
+  font-size: 14px;
+  transition: 0.4s ease-in-out;
+}
+.action_item:hover {
+  color: var(--text-light-blue);
+}
+.action_active {
+  color: var(--text-light-blue);
+}
+
+/* mobile actions button */
+.mobile_buttons_container {
+  display: none;
+  width: 32px;
+  height: 28px;
+  z-index: 3;
+}
+
+.mobile_buttons_container.open {
+  transform: rotate(-45deg);
+  transition: 0.33s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+.mobile_buttons_container.open .lines:first-child {
+  transform: rotate(-90deg) translateX(-2px);
+  transition: 0.33s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  align-self: center;
+}
+
+.mobile_buttons_container.open .lines:last-child {
+  transform: rotate(-90deg) translateX(2px);
+  align-self: center;
+}
+
+.mobile_buttons {
+  display: flex;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 21px;
+  justify-content: space-between;
+  width: 26px;
+}
+
+.lines {
+  background-color: #d6d6d6;
+  border-radius: 1.5px;
+  height: 3px;
+  transition: 0.33s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.lines:last-child {
+  align-self: flex-end;
+}

@@ -1,0 +1,291 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TBC Project</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/navbar.css" />
+    <link rel="stylesheet" href="./styles/section_1.css" />
+    <link rel="stylesheet" href="./styles/section_2.css" />
+    <link rel="stylesheet" href="./styles/section_3.css" />
+    <link rel="stylesheet" href="./styles/section_4.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+
+    <link rel="stylesheet" href="./styles/footer.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-inner">
+        <!-- Logo -->
+        <div class="logo">
+          <img src="./assets/images/logo.svg" />
+        </div>
+
+        <!-- Actions -->
+        <div id="overlay"></div>
+        <div class="actions">
+          <a class="action_item" href="https://www.tbcacademy.ge/">მთავარი</a>
+          <a class="action_item" href="https://www.tbcacademy.ge/it-academy"
+            >TBC IT</a
+          >
+          <a
+            class="action_item action_active"
+            href="https://www.tbcacademy.ge/usaid"
+            >TBC x USAID</a
+          >
+          <a class="action_item" href="https://www.tbcacademy.ge/risks-academy"
+            >რისკები</a
+          >
+        </div>
+
+        <!-- mobile version -->
+
+        <div class="mobile_buttons_container">
+          <div class="mobile_buttons">
+            <div class="lines" style="width: 50%"></div>
+            <div class="lines" style="width: 100%"></div>
+            <div class="lines" style="width: 50%"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section 1 -->
+    <div class="section_1">
+      <div class="section_1_content">
+        <h3>
+          <span>TBC x USAID</span>
+          <br />
+          <span>ᲢᲔᲥᲜᲝᲚᲝᲒᲘᲣᲠᲘ ᲒᲐᲜᲐᲗᲚᲔᲑᲘᲡᲗᲕᲘᲡ</span>
+        </h3>
+      </div>
+    </div>
+    <div class="section_1_p">
+      <p>
+        „ TBC x USAID - ტექნოლოგიური განათლებისთვის “ პროგრამა საინფორმაციო
+        ტექნოლოგიებით დაინტერესებულ ადამიანებს გთავაზობთ სრულად დაფინანსებულ
+        ონლაინ საგანმანათლებლო პრაქტიკულ კურსებს სხვადასხვა ICT მიმართულებით.
+        წარმატებულ კურსდამთავრებულებს ეძლევათ შესაძლებლობა დასაქმდნენ თიბისისა
+        და მის პარტნიორ კომპანიებში.
+        <br />
+      </p>
+      <span>
+        <a href="/"> გაიგე მეტი</a>
+      </span>
+    </div>
+
+    <!-- Section 2 -->
+    <div class="section_2">
+      <div class="section_2_header"><h3>სასწავლო კურსები</h3></div>
+
+      <div class="section_2_inner">
+        <div class="cards_list">
+          <!-- CARDSLISTHERE -->
+        </div>
+      </div>
+    </div>
+    <!-- Section 3 -->
+
+    <div class="section_3">
+      <div class="section_3_header">
+        <h3>პროექტის პარტნიორები</h3>
+      </div>
+      <!-- SLIDER CONTROLS -->
+      <div class="slider_controls">
+        <button class="prev-btn" onclick="prevSlide()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 41">
+            <path d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path>
+          </svg>
+        </button>
+        <button class="next-btn" onclick="nextSlide()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 41">
+            <path d="M20.3 40.8 0 20.5 20.3.2l.7.7L1.3 20.5 21 40.1z"></path>
+          </svg>
+        </button>
+        <!-- dots -->
+
+        <div class="dots_container">
+          <div class="dots" onclick="dotClicked(event)">
+            <div class="dot" data-index="0"></div>
+            <div class="dot" data-index="1"></div>
+            <div class="dot" data-index="2"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Wrapper -->
+      <div class="section_3_inner">
+        <!-- SLIDER HERE -->
+
+        <div class="slider_container">
+          <div class="slides">
+            <div class="slide"></div>
+            <div class="slide"></div>
+            <div class="slide"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 4 -->
+    <div class="section_4">
+      <div class="section_4_header">
+        <h2>ხშირად დასმული კითხვები</h2>
+        <a href=""><span>ყველა კითხვა</span></a>
+      </div>
+
+      <div class="accordion">
+        <div class="content_box">
+          <div class="label">
+            <h3>როგორ ხდება კურსებზე რეგისტრაცია და შერჩევა?</h3>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                class="arrowDown"
+                d="M8.14644661,10.1464466 C8.34170876,9.95118446 8.65829124,9.95118446 8.85355339,10.1464466 L12.4989857,13.7981758 L16.1502401,10.1464466 C16.3455022,9.95118446 16.6620847,9.95118446 16.8573469,10.1464466 C17.052609,10.3417088 17.052609,10.6582912 16.8573469,10.8535534 L12.4989857,15.2123894 L8.14644661,10.8535534 C7.95118446,10.6582912 7.95118446,10.3417088 8.14644661,10.1464466 Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="content">
+            <p style="padding-left: 0">
+              კურსზე რეგისტრაციისთვის უნდა გაიარო რამდენიმე ეტაპი:
+            </p>
+            <p>
+              <span>I ეტაპი</span> - პირველ ეტაპზე საჭიროა, შეავსო სასურველი
+              კურსისთვის განკუთვნილი სარეგისტრაციო ფორმა, რომელიც განთავსებულია
+              კურსის შიდა გვერდზე. კურსზე რეგისტრაციის დასრულების შემდეგ
+              დაიწყება შემოსული განცხადებების გადარჩევა.
+              <br />
+              <span>II ეტაპი</span> - შერჩევის მეორე ეტაპი კურსების მიხედვით
+              განსხვავებულია, ზოგიერთი კურსისთვის მოიცავს პრე-ტესტს, ზოგიერთ
+              კურსზე კი უნარების ტესტს, სადაც მინიმალური ზღვარის გადალახვის
+              შემთხვევაში გადახვალ შერჩევის შემდეგ ეტაპზე. <br />
+              <span> III ეტაპი</span> - მესამე ეტაპი კურსების მიხედვით
+              განსხვავდება: Advance კურსებზე, სადაც მოითხოვება გარკვეული
+              ტექნიკური ცოდნა, მონაწილეებმა უნდა დაწერონ ტექნიკური ტესტი ცოდნის
+              დონის შესამოწმებლად, ხოლო კურსებზე, სადაც რაიმე ტიპის წინასწარი
+              ცოდნა მოთხოვნილი არ არის უნდა შეასრულოთ ტექნიკური დავალება, რაც
+              თქვენი კვლევისა და თვითსწავლის უნარს ამოწმებს. <br />
+              <span> IV ეტაპი </span>- შერჩევის ბოლო მეოთხე ეტაპი მოიცავს
+              გასაუბრებას შესარჩევ კომისიასთან. გასაუბრების წარმატებით გავლის
+              შემთხვევაში ჩაირიცხებით კურსზე და გაფორმდება შესაბამისი
+              ხელშეკრულება.
+            </p>
+            <p style="padding-left: 0">
+              * სანამ კურსზე დარეგისტრირდები მნიშვნელოვანია, ყურადღებით წაიკითხო
+              კურსის აღწერა, ნახო რას ისწავლი კურსის განმავლობაში და გაიგო
+              გააჩნია თუ არა კურსს დასწრების წინაპირობა.
+            </p>
+          </div>
+        </div>
+        <div class="content_box">
+          <div class="label">
+            <h3>შემიძლია თუ არა ერთზე მეტ კურსზე რეგისტრაცია?</h3>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                class="arrowDown"
+                d="M8.14644661,10.1464466 C8.34170876,9.95118446 8.65829124,9.95118446 8.85355339,10.1464466 L12.4989857,13.7981758 L16.1502401,10.1464466 C16.3455022,9.95118446 16.6620847,9.95118446 16.8573469,10.1464466 C17.052609,10.3417088 17.052609,10.6582912 16.8573469,10.8535534 L12.4989857,15.2123894 L8.14644661,10.8535534 C7.95118446,10.6582912 7.95118446,10.3417088 8.14644661,10.1464466 Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="content">
+            <p>
+              TBC X USAID ტექნოლოგიური განათლებისთვის პროგრამაში თითოეულ
+              კანდიდატს აქვს მხოლოდ ერთი კურსის გავლის შესაძლებლობა. გარდა
+              Information Security და Python კურსებისა, სადაც Basic დონის გავლის
+              შემდეგ შესაძლებელია სწავლის გაგრძელება Advance დონეზე.
+            </p>
+          </div>
+        </div>
+        <div class="content_box">
+          <div class="label">
+            <h3>რა ღირს სწავლა პროგრამის ფარგლებში?</h3>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+            >
+              <path
+                class="arrowDown"
+                d="M8.14644661,10.1464466 C8.34170876,9.95118446 8.65829124,9.95118446 8.85355339,10.1464466 L12.4989857,13.7981758 L16.1502401,10.1464466 C16.3455022,9.95118446 16.6620847,9.95118446 16.8573469,10.1464466 C17.052609,10.3417088 17.052609,10.6582912 16.8573469,10.8535534 L12.4989857,15.2123894 L8.14644661,10.8535534 C7.95118446,10.6582912 7.95118446,10.3417088 8.14644661,10.1464466 Z"
+              ></path>
+            </svg>
+          </div>
+          <div class="content">
+            <p>
+              პროგრამის ფარგლებში კურსებზე სწავლა სრულიად დაფინანსებულია თიბისი
+              ბანკისა და USAID-ის მიერ.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="top">
+        <img
+          src="https://static.wixstatic.com/media/dd97f4_86c58c47370442a889e9a4e9db4eb00c~mv2.png/v1/crop/x_1,y_0,w_426,h_123/fill/w_133,h_38,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Asset%201%402x.png"
+          alt="Asset 1@2x.png"
+          style="
+            width: 106px;
+            height: 30px;
+            object-fit: cover;
+            object-position: 50% 50%;
+          "
+          width="106"
+          height="30"
+          fetchpriority="high"
+        />
+        <div class="socials">
+          <img
+            alt="Facebook"
+            fetchpriority="high"
+            src="https://static.wixstatic.com/media/ce6ec7c11b174c0581e20f42bb865ce3.png/v1/fill/w_49,h_49,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/ce6ec7c11b174c0581e20f42bb865ce3.png"
+            style="
+              width: 39px;
+              height: 39px;
+              object-fit: cover;
+              margin-right: 10px;
+            "
+          />
+          <img
+            alt="YouTube"
+            fetchpriority="high"
+            src="https://static.wixstatic.com/media/71ac09a5a92848cc943bf2ca2a09a6d0.png/v1/fill/w_49,h_49,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/71ac09a5a92848cc943bf2ca2a09a6d0.png"
+            style="width: 39px; height: 39px; object-fit: cover"
+          />
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="left">
+          <span><a href="#">© 2023</a> ყველა უფლება დაცულია</span>
+          <span><a href="#">წესები და პირობები</a></span>
+        </div>
+        <div class="right">
+          <button>
+            <a href="#"><span>მოგვწერეთ</span></a>
+          </button>
+        </div>
+      </div>
+    </footer>
+    <script src="/scripts/mobileNav.js"></script>
+    <script src="/scripts/coursesArr.js"></script>
+    <script src="./scripts/sliderActions.js"></script>
+    <script src="./scripts/sliderItems.js"></script>
+    <script src="/scripts/accordion.js"></script>
+  </body>
+</html>
